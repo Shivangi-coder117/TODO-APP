@@ -1,0 +1,270 @@
+body {
+    background-color: #c46868;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+    padding: 25px;
+}
+
+p{
+    color: #6e3c3c;
+}
+
+
+#main {
+    
+    height: auto;
+    margin: auto;
+    width:55%;
+    margin-top: 40px;
+    border-radius: 10px;
+    background: white;
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* Heading*/
+#heading {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.8rem;
+    color: brown;
+    margin: 0;
+    margin: 10px;
+}
+
+
+
+/*Decription*/
+#container {
+    width: auto;
+    padding: 10px;
+    padding-bottom: 28px;
+    border: 1px solid #968e8e;
+}
+
+
+#container p {
+    padding-left: 2px;
+    padding-bottom: 5px;
+}
+#container p {
+     font-size: 1rem;
+    display: inline;
+    font-family: Cambria, 'Times New Roman', serif;
+}
+#due-date-container p
+{
+    font-size: 1rem;
+    display: inline;
+    font-family: Cambria, 'Times New Roman', serif;
+
+}
+#category-container p
+{
+    font-size: 1rem;
+    display: inline;
+    font-family: Cambria, 'Times New Roman', serif;
+}
+
+/* form */
+
+#form-description {
+    font-size: 1.1rem;
+    width: 77%;
+    opacity: 0.5;
+    border:0;
+    background-color: transparent;
+    font-family: Cambria, 'Times New Roman', serif;
+}
+
+
+
+#choose{
+    font-weight: bold;
+    opacity:0.4;
+}
+
+
+.date{
+    display: flex;
+}
+#category-heading {
+    padding-bottom: 5px;
+}
+
+
+/* Dropdown*/
+select {
+    width: 100%;
+    border: 0;
+    font-family: Cambria, 'Times New Roman', serif;
+    font-size: 1rem;
+    background-color: transparent;
+    opacity: 0.6;
+   
+}
+
+#date-box {
+    width: 74%;
+    border: 0;
+    background-color: transparent;
+    opacity: 0.4;
+    font-family: Cambria, 'Times New Roman', serif;
+    font-size: 1rem;
+    
+    
+}
+#due-date-container {
+    width: 51%;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+#category-container {
+    
+    width: 51%;
+    padding: 10px;
+    border-right: 1px solid #7e7b7b;
+}
+
+
+
+/* Button*/
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+/* Add Button */
+.add {
+    background-color: rgb(114, 112, 112);
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    padding: 12px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #ed3824;
+    color: white;
+     height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin-right: 3px;
+}
+
+/* Button's Hover */
+
+.add:hover {
+    background: #3f3c3c;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.delete-button:hover {
+    background: #890f00;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* TODO List*/
+
+
+/*EVEN NUMBER*/
+#task:nth-child(2n) {
+    background: #fbfbfb;
+}
+
+/*ODD NUMBERE*/
+#task:nth-child(2n+1) {
+    background: #f7f7f7;
+}
+
+/*hover effects  */
+#task:hover{
+    background-color: #e1e1e1;
+}
+.category-date-container:hover
+{
+    background-color: #e1e1e1;
+}
+#description-container:hover
+{
+    background-color: #e1e1e1;
+}
+/* Div containing all tasks in the database  */ 
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+/*Flex box*/
+
+#task {
+    flex: 0 0 50px;
+    display: flex;
+    flex-direction: row; 
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+    justify-content: space-evenly;
+}
+
+/* Category Box */
+#task-category {
+    text-align: center;
+    background-color:goldenrod;
+    color:white;
+    height: 18px;
+    width: 70px;
+    padding-top: 15px;
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border:2px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Task Description */
+#task-description {
+    color: #5c5b5b;
+    font-size: 1rem;
+}
+
+/* Task Due Date*/
+#task-date {
+    color: rgb(179, 201, 212);
+    font-size: 0.7rem;
+}
+
+/* Checkbox */
+#check-box {
+   
+    color: rgb(148, 59, 231);
+    outline: 2px solid #636262;
+    margin-top: 11px;
+}
+
+
+/* Cross*/
+
+#remove-task{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+#remove-task a {
+    color: red;
+}
